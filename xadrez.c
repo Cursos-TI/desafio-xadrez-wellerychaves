@@ -1,32 +1,36 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+	// bishop movement - 5 top right diagonally
+	printf("Movimento bispo - 5 diagonal superior direita\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+	for (int index = 0; index < 5; index++) {
+		printf("Cima\n");
+		printf("Direita\n");
+	}
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+	printf("\n\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+	// rook movement - 5 to the right
+	int whileCounter = 0;
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+	printf("Movimento torre 5 a direita\n");
+	while (whileCounter < 5) {
+		printf("Direita\n");
+		whileCounter++;
+	};
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+	printf("\n\n");
 
-    return 0;
+	// Queen movement - 8 to the left
+	int doWhileCounter = 0;
+
+	printf("Movimento rainha - 8 para esquerda\n");
+	do {
+		printf("Esquerda\n");
+		doWhileCounter++;
+	} while (doWhileCounter < 8);
+
+	return 0;
 }
