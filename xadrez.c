@@ -32,5 +32,18 @@ int main() {
 		doWhileCounter++;
 	} while (doWhileCounter < 8);
 
+	printf("\n\n");
+
+	// knight movement - L down and left
+	int knightCounter = 0;
+
+	printf("Movimento do cavalo - L baixo esquerda\n");
+	for (int index = 0; index < 1; index++) {
+		while (knightCounter < 2) {
+			printf("Baixo\n");
+			knightCounter++;
+		};
+		printf("Esquerda\n");
+	};
 	return 0;
 }
