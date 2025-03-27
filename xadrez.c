@@ -1,49 +1,69 @@
 #include <stdio.h>
 
-int main() {
+void bishopMovement(int counter) {
+	// bishop movement
+	printf("Movimento bispo\n");
 
-	// bishop movement - 5 top right diagonally
-	printf("Movimento bispo - 5 diagonal superior direita\n");
-
-	for (int index = 0; index < 5; index++) {
+	for (int index = 0; index < counter; index++) {
 		printf("Cima\n");
-		printf("Direita\n");
+		for (int j = 0; j < 1; j++) {
+			printf("Direita\n");
+		}
 	}
+	printf("\n");
+};
 
-	printf("\n\n");
+void rookMovement(int counter) {
+	// rook movement
+	int index = 0;
 
-	// rook movement - 5 to the right
-	int whileCounter = 0;
-
-	printf("Movimento torre 5 a direita\n");
-	while (whileCounter < 5) {
+	printf("Movimento torre\n");
+	while (index < counter) {
 		printf("Direita\n");
-		whileCounter++;
+		index++;
 	};
+	printf("\n");
+};
 
-	printf("\n\n");
+void queenMovement(int counter) {
+	// Queen movement
+	int index = 0;
 
-	// Queen movement - 8 to the left
-	int doWhileCounter = 0;
-
-	printf("Movimento rainha - 8 para esquerda\n");
+	printf("Movimento rainha\n");
 	do {
 		printf("Esquerda\n");
-		doWhileCounter++;
-	} while (doWhileCounter < 8);
+		index++;
+	} while (index < counter);
+	printf("\n");
+};
 
-	printf("\n\n");
+void knightMovement() {
+	// knight movement
+	int counter = 0;
+	printf("Movimento do cavalo\n");
 
-	// knight movement - L down and left
-	int knightCounter = 0;
+	while (counter <= 1) {
+		printf("Cima\n");
 
-	printf("Movimento do cavalo - L baixo esquerda\n");
-	for (int index = 0; index < 1; index++) {
-		while (knightCounter < 2) {
-			printf("Baixo\n");
-			knightCounter++;
-		};
-		printf("Esquerda\n");
+		for (int index = 0; index < 1; index++) {
+			if (counter == 1) {
+				printf("Direita\n");
+			}
+		}
+
+		counter++;
+		continue;
 	};
+	printf("\n");
+};
+
+int main() {
+	bishopMovement(5);
+
+	rookMovement(5);
+
+	queenMovement(8);
+
+	knightMovement();
 	return 0;
 }
