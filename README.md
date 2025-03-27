@@ -1,7 +1,7 @@
 # Executando
 Como compilar e executar o código:
 
-No terminal, dentro da pasta do projeto, execute o comando abaixo para compilar e executar o arquivo `tema1-cartasSuperTrunfo.c`:
+No terminal, dentro da pasta do projeto, execute o comando abaixo para compilar e executar o arquivo `xadrez.c`:
 ```bash
 gcc xadrez.c -o xadrez && ./ xadrez
 ```
